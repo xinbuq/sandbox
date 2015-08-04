@@ -1,0 +1,13 @@
+[user]
+    name = huanghui1
+    email = huanghui1@cmcm.com
+
+[alias]
+    co = checkout
+    ci = commit
+    s  = status
+    p  = pull --rebase
+    pu = push origin HEAD
+    br = branch
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
