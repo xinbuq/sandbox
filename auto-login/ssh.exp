@@ -1,0 +1,16 @@
+#!/usr/bin/expect -f
+
+set ip [lindex $argv 0 ]
+set code [lindex $argv 1 ]
+set password "<SET_YOUR_PASSWORD>"
+set timeout 10
+
+spawn ssh huanghui1@$ip
+expect {
+    "*yes/no" { send "yes\r"; exp_continue}
+    "*Verification code:" { send "$code\r"; exp_continue }
+    "*Password:" { send "$password\r" }
+}
+
+interact
+
