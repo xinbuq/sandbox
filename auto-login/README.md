@@ -1,3 +1,5 @@
+[ ONLY TESTED ON MACOS & LINUX ]
+
 1. put these files into one dir which is config-ed in your PATH. e.g.
 cp * ~/mytools/
 export PATH=$PATH:~/mytools
